@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Text to Speech",
+    "description": "Get speech of the text by select it and right click choose Get speech",
+    "version": "1.0.0",
+    "icons": {
+        "16": "listening_16.png",
+        "48": "listening_48.png",
+        "128": "listening_128.png"
+    },
+    "browser_action": {
+        "default_icon": "listening_16.png",
+        "default_popup": "index.html"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "tts",
+        "contextMenus"
+    ]
+
+}
